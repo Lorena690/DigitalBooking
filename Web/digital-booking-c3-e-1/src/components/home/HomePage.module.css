@@ -1,0 +1,96 @@
+@import "/src/styles/variables.css";
+@import "/src/styles/global.css";
+
+.searchContainer {
+  background-color: rgb(59 80 126 / 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 8px;
+  top: -50px;
+}
+
+.bannerSearchContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: var(--secondary-50); */
+}
+
+.categoriesContainer {
+  /* background-color: var(--secondary-50); */
+  margin-bottom: 52px;
+}
+
+.homeContainer {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Añade el scroll personalizado */
+.homeContainer::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+  background-color: transparent;
+}
+
+/* Estilo del scroll */
+.homeContainer::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+/* Estilo del scroll cuando se pasa el mouse sobre él */
+.homeContainer::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+}
+
+/* Estilo del track del scroll */
+.homeContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Estilo del track del scroll cuando se pasa el mouse sobre él */
+.homeContainer::-webkit-scrollbar-track:hover {
+  background-color: transparent;
+}
+
+.colorBoxContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 62vh;
+  background-color: var(--secondary-50);
+  z-index: -1;
+  width: 100%;
+}
+
+.subtitle {
+  font: var(--h3);
+  color: var(--secondary-300);
+  margin-bottom: 16px;
+  line-height: 2rem;
+  border-bottom: 1px solid var(--secondary-50);
+}
+
+@media (max-width: 1280px) {
+  .recommendedContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .searchContainer {
+    align-items: flex-start;
+    padding: 0.8rem;
+    border-radius: 0;
+    position: initial;
+  }
+}
